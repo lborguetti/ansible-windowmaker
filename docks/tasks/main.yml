@@ -1,0 +1,6 @@
+---
+- name: Install Docks App
+  apt: pkg={{ item.pkg }}
+  with_items: wm_pkg
+  tags:
+    - docks

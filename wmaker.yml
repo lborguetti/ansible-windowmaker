@@ -1,0 +1,10 @@
+---
+- hosts: all
+  user: luciano
+  sudo: yes
+  connection: local
+
+  roles:
+    - wmaker
+    - docks
+    - wicd

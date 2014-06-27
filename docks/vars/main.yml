@@ -1,0 +1,10 @@
+---
+wm_pkg:
+  - pkg: wmbattery
+  - pkg: wmdiskmon
+  - pkg: wmclockmon
+  - pkg: wmcpuload
+  - pkg: wmwave
+  - pkg: wmcalclock
+  - pkg: wmdrawer
+  - pkg: wmsystemtray

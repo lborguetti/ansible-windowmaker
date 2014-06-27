@@ -1,0 +1,5 @@
+---
+- name: install wmaker
+  apt: name=wmaker
+  tags:
+    - wmaker
