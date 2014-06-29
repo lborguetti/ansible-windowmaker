@@ -8,3 +8,4 @@ wm_pkg:
   - pkg: wmcalclock
   - pkg: wmdrawer
   - pkg: wmsystemtray
+  - pkg: mixer.app
