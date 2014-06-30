@@ -1,6 +1,6 @@
 ---
 wm_pkg:
-  - pkg: wmbattery
+  - pkg: wmacpi
   - pkg: wmdiskmon
   - pkg: wmclockmon
   - pkg: wmcpuload
