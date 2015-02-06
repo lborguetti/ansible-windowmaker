@@ -1,0 +1,19 @@
+---
+- name: Installing wicd
+  yum: name={{ item }}
+  with_items:
+    - wicd
+    - wicd-gtk
+    - wicd-curses
+  tags:
+    - wicd
+
+- name: Disabling NetworkManager
+  service: name=NetworkManager state=stopped enabled=no
+  tags:
+    - wicd
+
+- name: Enablingg wicd
+  service: name=wicd state=started enabled=yes
+  tags:
+    - wicd

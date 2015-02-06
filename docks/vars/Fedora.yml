@@ -1,0 +1,7 @@
+---
+wm_pkg:
+  - pkg: wmacpi
+  - pkg: wmvolman
+  - pkg: wmCalClock
+  - pkg: wmsystemtray
+  - pkg: wmmon

@@ -1,0 +1,13 @@
+---
+- name: Installing wicd
+  apt: name=wicd-gtk
+  tags:
+    - wicd
+
+- name: Removing network-manager
+  apt: name={{ item }} purge=yes state=absent
+  with_items:
+    - network-manager-gnome
+    - network-manager
+  tags:
+    - wicd

@@ -1,5 +1,6 @@
 ---
-- name: install wmaker
-  apt: name=wmaker
-  tags:
-    - wmaker
+- include: Fedora.yml
+  when: ansible_distribution == 'Fedora'
+
+- include: Ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'

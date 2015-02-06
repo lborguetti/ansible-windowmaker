@@ -1,0 +1,10 @@
+---
+- include_vars: ../vars/Ubuntu.yml
+  tags:
+    - docks
+
+- name: Install Docks App
+  apt: name={{ item.pkg }}
+  with_items: wm_pkg
+  tags:
+    - docks

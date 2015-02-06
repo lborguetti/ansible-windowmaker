@@ -1,0 +1,10 @@
+---
+- include_vars: ../vars/Fedora.yml
+  tags:
+    - docks
+
+- name: Installing Docks App
+  yum: name={{ item.pkg }}
+  with_items: wm_pkg
+  tags:
+    - docks

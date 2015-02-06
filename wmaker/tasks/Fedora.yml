@@ -1,0 +1,8 @@
+---
+- name: Installing WindowMaker
+  yum: name={{ item }}
+  with_items:
+    - WindowMaker
+    - WindowMaker-extra
+  tags:
+    - windowmaker
