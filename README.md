@@ -1,10 +1,19 @@
-ansible-windowmaker
-===================
+ansible.windowmaker
+==
 
-Install Window Maker and Docks in Ubuntu 14.04 via Ansible
+Install Window Maker, Docks and Wicd with Ansible
 
-* Run 
+Tested with:
 
-change user in wmaker.yml and execute:
+- Ubuntu 14.04
+- Fedora 21
 
-	ansible-playbook wmaker.yml -i production_hosts -K 
+## First install Requirements
+
+- Install [Ansible](http://www.ansible.com/)
+
+## Running
+
+        git clone https://github.com/lborguetti/ansible.windowmaker
+        cd ansible.windowmaker
+        ansible-playbook wmaker.yml -i production_hosts -K -u ${USER}
